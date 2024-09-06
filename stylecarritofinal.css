@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*prop flexbox q alinea los elementos hijos del del contenedor flex*/
+    background-color: #fff;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+    flex-grow: 1;
+    text-align: center;
+    margin: 0.4rem
+}
+
+.carrito-container {
+    position: fixed; /* se ve el contenedo del carito como flotante y si se hace scroll queda fijo*/
+    top: 0;
+    right: 0;
+    margin-right: 2%;
+    
+}
+
+.carrito-img {
+    cursor: pointer;
+    width: 50px;
+    height: auto;
+        
+}
+
+.buy-card {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 380px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*se crea una sombra suave alrededor del elem*/
+}
+
+.buy-card ul {
+    list-style-type: none; /* No se visualiza el punntito en el encabezado de la lista de productos*/
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+.buy-card ul.nav-card {
+    display: flex;
+    justify-content: space-between; /*prop flexbox q alinea los elementos hijos del del contenedor flex*/
+    border-bottom: 1px solid #ccc;
+}
+
+.buy-card ul.nav-card li {
+    padding: 5px;
+    font-weight: bold; /*Peso de la letra. se ve como mas negrita (o el color q tenga)*/
+    flex: 1;
+    text-align: center;
+    font-size: 15px;
+}
+
+.lista_de_productos {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding: 3px 10px;
+}
+
+.lista_de_productos img {
+    width: 65px;
+    height: auto;
+}
+
+.lista_de_productos p {
+    flex: 0.;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.lista_de_productos .eliminar {
+    color: red;
+    cursor: pointer;
+}
+
+button {
+    background-color: #c929bb;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 60%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #eb4ec3;
+   
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    max-width: 960px; /* ancho máx del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.items {
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 8px;
+    text-align: center;
+    box-sizing: border-box;
+    flex: 1 1 250px; /* flexibilidad de los elementos */
+    max-width: 300px; /* Praa q no se estiren demasiado las imagenes se limita el ancho */
+    border-radius: 10px;
+}
+
+.items img {
+    width: 80%;
+    height: auto;
+}
+
+.items h3 {
+    margin: 10px 0;
+}
+
+.items p {
+    font-size: 18px;
+}
